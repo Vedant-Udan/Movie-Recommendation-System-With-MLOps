@@ -3,6 +3,7 @@ services:
     build: .
     ports:
       - "5003:5003"
+      - "8501:8501"
     environment:
       - MLFLOW_TRACKING_URI=mlruns/
       - PYTHONPATH=/app
