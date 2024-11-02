@@ -1,0 +1,19 @@
+services:
+  app:
+    build: .
+    ports:
+      - "5003:5003"
+    environment:
+      - MLFLOW_TRACKING_URI=mlruns/
+      - PYTHONPATH=/app
+    depends_on:
+      - mlflow
+    volumes:
+      - .:/app
+
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:v2.17.2
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./mlruns:/mlflow/mlruns

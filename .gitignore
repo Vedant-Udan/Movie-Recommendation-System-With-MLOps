@@ -1,1 +1,4 @@
 mlruns/
+.venv
+src/__pycache__
+new-env/
