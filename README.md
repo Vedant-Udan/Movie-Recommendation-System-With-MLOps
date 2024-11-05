@@ -1,3 +1,3 @@
 # Movie-Recommendation-System-With-MLOps
 
-### Project currently is in Progress.
+### This Project is currently in Progress.
